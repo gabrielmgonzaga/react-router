@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,9 +15,10 @@ import About from './Components/About';
 export default function App() {
   return (
     <Router>
-      <div>
-        <Nav/>
-        {/* A <Switch> looks through its children <Route>s and
+      <section>
+        <Nav />
+        <main>
+          {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/about">
@@ -29,7 +31,8 @@ export default function App() {
             <Home />
           </Route>
         </Switch>
-      </div>
+        </main>
+      </section>
     </Router>
   );
 }
