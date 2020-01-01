@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Nav() {
     return (
       <nav>
-          <h1>Logo</h1>
+          <h1><Link to="/">Logo</Link></h1>
           <div className="hamburger">&#9776;</div>
           <ul className="menu">
             <li>
@@ -14,9 +14,9 @@ export default function Nav() {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
-        </nav>
+      </nav>
     )
 }

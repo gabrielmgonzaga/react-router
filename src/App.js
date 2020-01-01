@@ -3,13 +3,13 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 import Nav from './Components/Nav';
 import Home from './Components/Home';
 import About from './Components/About';
+import Contact from './Components/Contact';
 
 
 export default function App() {
@@ -24,8 +24,8 @@ export default function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/contact">
+            <Contact />
           </Route>
           <Route path="/">
             <Home />
@@ -35,8 +35,4 @@ export default function App() {
       </section>
     </Router>
   );
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }
