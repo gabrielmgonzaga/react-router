@@ -1,91 +1,14 @@
 body {
   margin: 0 auto;
-  width: 100%;
-}
-
-main {
   padding: 15px;
 }
 
-/*
-=================
- HomeCards
- ================
-*/
-
-.home-card {
-  box-sizing: border-box;
+.card {
+  margin-bottom: 15px;
   padding: 15px;
-  width: 100%;
-  text-decoration: none;
-  color: #333;
+  box-shadow: 0px 10px 40px -10px rgba(0, 64, 128, 0.2);
 }
 
-/*== > 992px ==*/
-@media screen and (min-width: 992px) {
-  .home-card {
-    display: inline-block;
-    width: 50%;
-  }
+p {
+  margin-bottom: 30px;
 }
-
-/*
-=================
- Navigation 
- ================
-*/
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 30px;
-  background: #000;
-  color: #fff;
-}
-
-nav ul  {
-  display: flex;
-}
-
-nav ul li {
-  margin: 10px;
-  list-style: none;
-}
-
-nav ul li:hover {
-  cursor: pointer;
-}
-
-nav h1 a,
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/*== > 800px ==*/
-@media screen and (min-width: 800px) {
-  nav div.hamburger {
-    display: none;
-  }
-}
-
-/*== < 800px ==*/
-@media screen and (max-width: 800px) {
-  nav .menu {
-    display: flex;
-    flex-direction: column;
-    display: none;
-  }
-
-  nav div.hamburger {
-    margin-top: 15px;
-    font-size: 1.4em;
-  }
-
-  nav div.hamburger:hover {
-    cursor: pointer;
-  }
-}
-
-/*
-=================
-*/
